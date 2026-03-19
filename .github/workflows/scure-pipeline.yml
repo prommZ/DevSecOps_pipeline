@@ -31,13 +31,13 @@ jobs:
 
       # 5. Build Docker Image
       - name: Build Docker Image
-        run: docker build -t DevSecOps-app .
+        run: docker build -t devsecops-app .
 
       # 6. Image Scan (Trivy Image)
       - name: Scan Docker Image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'DevSecOps-app'
+          image-ref: 'devsecops-app'
           format: 'table'
 
       # 7. Login to Docker Hub
