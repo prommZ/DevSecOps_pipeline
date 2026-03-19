@@ -50,6 +50,6 @@ jobs:
       # 8. Push Image
       - name: Push Image
         run: |
-          docker tag secure-app prommz/devsecops-app
+          docker tag devsecops-app prommz/devsecops-app
           docker push prommz/devsecops-app
 
